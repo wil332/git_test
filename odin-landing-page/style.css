@@ -1,1 +1,189 @@
- 
+:root {
+  /* hero */
+  --font: "Roboto";
+  --background-color: #1f2937;
+  --main-font-size: 48px;
+  --main-color: #f9faf8;
+  --main-weight: 900;
+  --secondary-font-size: 18px;
+  --secondary-color: #e5e7eb;
+  --header-logo-font-size: 24px;
+  --header-logo-color: #f9faf8;
+  /* main */
+  --btn-bg: #3882f6;
+  --information-header-bg: #1f2937;
+  --information-header-font-size: 36px;
+  --information-header-weight: 900;
+  /* quote */
+  --quote-bg: #e5e7eb;
+  --quote-font-size: 36px;
+  --quote-font-style: italic;
+  --quote-weight: 300;
+  --quote-color: #1f2937;
+}
+
+body {
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header,
+.hero {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6.25rem;
+  gap: 16px;
+}
+
+.hero {
+  height: 400px;
+}
+
+.info,
+.web-image {
+  flex: 1;
+}
+
+.web-image img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.logo {
+  font-size: var(--header-logo-font-size);
+  color: var(--header-logo-color);
+  text-transform: capitalize;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: var(--secondary-font-size);
+}
+
+.hero .info .title {
+  font-size: var(--main-font-size);
+  color: var(--main-color);
+  font-weight: var(--main-weight);
+}
+
+.hero .info .text {
+  color: var(--secondary-color);
+  font-size: var(--secondary-font-size);
+}
+
+.btn {
+  padding: 6px 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--btn-bg);
+  color: var(--main-color);
+}
+
+.main {
+  text-align: center;
+  margin: 24px;
+  margin-bottom: 4rem;
+}
+
+.main .title {
+  margin-bottom: 24px;
+  color: var(--information-header-bg);
+  font-size: var(--information-header-font-size);
+  font-weight: var(--information-header-weight);
+}
+
+.container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 7rem;
+
+  gap: 32px;
+}
+
+.container .card {
+  max-width: 150px;
+}
+
+.container .card img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 17%;
+}
+
+.caption {
+  text-align: justify;
+}
+
+.quote {
+  background-color: var(--quote-bg);
+  padding: 5rem 5rem;
+  margin-bottom: 4rem;
+}
+
+.quote .text {
+  color: var(--quote-color);
+  font-style: var(--quote-font-style);
+  font-size: var(--quote-font-size);
+  font-weight: var(--quote-weight);
+  margin: 0 0 0 6rem;
+}
+
+.quote .author {
+  color: var(--information-header-bg);
+  font-size: 16px;
+  font-weight: var(--information-header-weight);
+  display: block;
+  text-align: right;
+}
+
+.sign-up {
+  background-color: var(--btn-bg);
+  color: var(--main-color);
+  padding: 1.5rem 8px 8px;
+  border-radius: 10px;
+  margin: 0 5rem 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sign-up .title {
+  font-size: 24px;
+  font-weight: var(--information-header-weight);
+}
+
+.sign-up .text {
+  margin-top: 0;
+  color: var(--secondary-color);
+  font-size: var(--secondary-font-size);
+}
+
+.sign-btn {
+  padding: 6px 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--btn-bg);
+  color: var(--main-color);
+  border-color: var(--main-color);
+}
+
+.footer {
+  background: var(--information-header-bg);
+  padding: 1.5rem 6.25rem;
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: var(--secondary-font-size);
+}
